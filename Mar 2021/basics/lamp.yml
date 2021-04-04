@@ -30,8 +30,11 @@
     when: ansible_os_family == "Debian"  
   - name: Install php for redhat
     yum: 
-      name: ['php', 'php-mysql']
+      name: "{{ item }}"
       state: present
+    with_items:  
+      - php
+      - php-mysql
     notify:
     - restart httpd  
     when: ansible_os_family == "RedHat"   

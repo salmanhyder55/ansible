@@ -15,10 +15,11 @@
    yum:
       name: "{{ "item" }}"
       state: present
-      with_items:
-        - php
-        -php-mysql
+    with_items:
+      - php
+      - php-mysql
   - name: restart apache
     service:
       name: httpd
-      state: restarted             
+      state: restarted
+  
