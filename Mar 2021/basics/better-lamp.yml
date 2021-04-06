@@ -20,7 +20,7 @@
       url: https://raw.githubusercontent.com/asquarezone/AnsibleZone/master/ClassRoomExamples/July2018/basics/info.php
       dest: /var/www/html/info.php
     notify:
-    - restart apache  2  
+    - restart apache2  
   handlers:
   - name: restart apache2
     service:

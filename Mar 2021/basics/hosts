@@ -7,9 +7,3 @@ ip-172-31-52-129.ec2.internal pack_name: apache2
 
 [webserver]
 localhost
-
-[ubuntu:vars]
-pack_name=apache2
-
-[redhat:vars]
-pack_name=httpd
