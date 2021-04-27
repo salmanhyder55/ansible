@@ -1,0 +1,8 @@
+---
+- name: just installing utils
+  package:
+    name: "{{ items }}"
+    state: present
+  with_items:
+  - git
+  - tree
